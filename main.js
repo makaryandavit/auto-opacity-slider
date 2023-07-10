@@ -9,8 +9,8 @@ setTimeout(function autoSlide(){
 
     contents[zIndex].style.cssText = 'opacity: 1;'
     zIndex++;
-    if(zIndex == contents.length){
+    if(zIndex > contents.length - 1){
         zIndex = 0;
     }
-    setTimeout(autoSlide,2000)
-},2000)
+    setTimeout(autoSlide,2500)
+},0)
